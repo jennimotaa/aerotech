@@ -1,67 +1,81 @@
+Este é um modelo de README.md otimizado para o seu GitHub, utilizando uma estrutura visual moderna, ícones temáticos e uma organização que destaca sua competência técnica e a importância do projeto da SkyCargo.
+
 ✈️ SkyCargo - Torre de Controle Logística (Case Sênior)
+A SkyCargo é especializada no transporte de cargas de altíssima criticidade, como órgãos para transplante e peças de maquinário pesado. Este projeto substitui o monitoramento manual da Infraero por uma Torre de Controle Automatizada, garantindo que a logística de solo esteja pronta no segundo exato do pouso.
 
------- 📌 Sobre o Projeto ------ 
-Este projeto foi desenvolvido como desafio final do bootcamp na Generation Brasil. A SkyCargo transporta cargas críticas (órgãos e maquinário urgente). O objetivo foi substituir o monitoramento manual por uma Torre de Controle Automatizada que utiliza telemetria em tempo real e dados meteorológicos para prever o ETA (Estimated Time of Arrival) real. 
+📌 Sobre o Projeto
+Desenvolvido como desafio final do bootcamp na Generation Brasil, em parceria com CashMe e Cyrela, o sistema cruza telemetria em tempo real com dados climáticos para eliminar a incerteza operacional.
 
+🛠️ Tecnologias Utilizadas
 
-/n
------- 🛠️ Tecnologias Utilizadas: ------ 
-
-
-Linguagem: Python (Coleta e Tratamento de Dados). 
-
-Banco de Dados: MySQL (Modelagem Relacional e Índices de Performance). 
-
-Visualização: Power BI (DAX avançado, Design UI/UX e Interatividade).
-
-APIs: OpenSky (Telemetria ADSB) e Open-Meteo (Condições Climáticas). 
+Linguagem: Python (Coleta via APIs e Tratamento de Dados).
 
 
------- 🚀 Funcionalidades Principais: ------ 
+Banco de Dados: MySQL (Modelagem Relacional e Índices de Performance).
 
 
-Cálculo Geodésico: Rastreio físico da aeronave via Latitude/Longitude. 
-
-ETA Ajustado: Algoritmo que adiciona +10min em casos de ventos fortes e +15min para pistas molhadas. 
-
-Matriz de Risco: Classificação automática de voos em Baixo, Médio ou Crítico com base no clima e altitude. 
-
-Alerta de Emergência: Identificação automática de descidas bruscas fora do padrão de pouso. 
+Visualização: Power BI (DAX avançado, Design UI/UX e Storytelling).
 
 
+APIs: OpenSky (Telemetria ADSB) e Open-Meteo (Condições Climáticas).
 
------- 📊 Visualização do Dashboard ------
-<img width="2574" height="1484" alt="image" src="https://github.com/user-attachments/assets/2fe799c6-a18d-45b9-afc9-3b676be198fd" />
+🚀 Funcionalidades Principais
 
-
-
------- 📂 Como Utilizar este Repositório ------
-
-Por questões de segurança e proteção de dados, as credenciais de acesso ao banco de dados foram removidas dos scripts. Para replicar o projeto:
-
-1. Banco de Dados: Execute o arquivo schema.sql em seu servidor MySQL local para criar a estrutura das tabelas FACT_VOO_TELEMETRIA e FACT_CONDICOES_POUSO.
-2. Configuração: No arquivo functions.py, insira suas credenciais (Host, User e Password) no dicionário DB_CONFIG.
-3. Execução: Execute o script functions.py para iniciar o monitoramento em loop (atualização recomendada a cada 5 minutos).
+Cálculo Geodésico: Rastreio físico preciso da aeronave utilizando Latitude e Longitude.
 
 
-   
------- 🚀 Próximos Passos ------
-
-Machine Learning: Implementação de modelos de regressão (XGBoost/Random Forest) para prever padrões de órbita e refinar o ETA de forma preditiva.
-
-Dados Premium: Transição para APIs de baixa latência para garantir disponibilidade total em escala industrial.
+ETA Ajustado: Algoritmo inteligente que adiciona +10min para ventos fortes e +15min para pistas molhadas .
 
 
-
------- 👥 Agradecimentos ------
-
-Equipe: João Victor Ravazzi Ferretti, Andrey Alves Miranda, Carrie Jenniffer Alves Mota, Juliana Malheiros, Leandro Falasca.
-
-Instrutores: Luiz Chiavini e Samuel Reginatto
-
-Apoiadores: Generation Brasil, Grupo Cyrela e CashMe.
-
-------------------------------------------------------
+Matriz de Risco Operacional: Classificação automática em Baixo, Médio ou Crítico baseada em teto de nuvens e velocidade do vento.
 
 
-Este projeto demonstra competências em Engenharia de Dados, Business Intelligence e Storytelling com Dados.
+Alerta de Emergência: Identificação de descidas bruscas ou desvios de rota fora do padrão de pouso.
+
+📊 Visualização do Dashboard
+O dashboard foi projetado em Dark Mode para reduzir a fadiga visual dos operadores da Torre de Controle.
+
+
+Página 1: Visão Geral da Frota e Status de Pontualidade.
+
+
+Página 2: Telemetria Individualizada (Voo PSJTP) e Gráficos de Descida.
+
+
+Página 3: Mapas de Calor e Distribuição de Risco por Aeroporto.
+
+📂 Como Utilizar este Repositório
+Para replicar a estrutura da Torre de Controle em seu ambiente local, siga os passos abaixo:
+
+1️⃣ Preparação do Banco de Dados
+Execute o arquivo schema.sql no seu servidor MySQL. Ele criará as tabelas FACT_VOO_TELEMETRIA e FACT_CONDICOES_POUSO com os índices necessários para alta performance.
+
+2️⃣ Configuração de Credenciais
+No arquivo functions.py, localize o dicionário de configuração e insira suas credenciais locais:
+
+Python
+DB_CONFIG = {
+    'host': 'seu_host',
+    'user': 'seu_usuario',
+    'password': 'sua_senha'
+}
+3️⃣ Execução do Monitoramento
+Para iniciar a coleta de dados e atualização do banco, execute o script principal:
+
+Bash
+python update_db.py
+Este script utiliza as funções contidas em functions.py para rodar o loop de monitoramento a cada 5 minutos.
+
+🔮 Próximos Passos
+Machine Learning: Implementação de modelos (XGBoost) para prever o ETA com base no histórico de órbitas de espera.
+
+Dados Premium: Integração com provedores de satélite para cobertura em áreas de baixa captação ADSB.
+
+👥 Agradecimentos e Equipe
+Desenvolvedores: João Victor Ravazzi Ferretti, Andrey Alves Miranda, Carrie Jenniffer Alves Mota, Juliana Malheiros, Leandro Falasca.
+
+Mentoria: Luiz Chiavini e Samuel Reginatto.
+
+Apoio: Generation Brasil, Grupo Cyrela e CashMe.
+
+Pronta para novos desafios em Engenharia de Dados e BI! 🚀
