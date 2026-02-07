@@ -4,6 +4,7 @@
 Este projeto foi desenvolvido como desafio final do bootcamp na Generation Brasil. A SkyCargo transporta cargas críticas (órgãos e maquinário urgente). O objetivo foi substituir o monitoramento manual por uma Torre de Controle Automatizada que utiliza telemetria em tempo real e dados meteorológicos para prever o ETA (Estimated Time of Arrival) real. 
 
 
+/n
 ------ 🛠️ Tecnologias Utilizadas: ------ 
 
 
