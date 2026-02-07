@@ -13,20 +13,16 @@ Desenvolvido como desafio final do bootcamp na **Generation Brasil**, em parceri
 
 ### 🛠️ Tecnologias Utilizadas
 
-* 
-**Linguagem:** Python (Coleta via APIs e Tratamento de Dados).
+* **Linguagem:** Python (Coleta via APIs e Tratamento de Dados).
 
 
-* 
-**Banco de Dados:** MySQL (Modelagem Relacional e Índices de Performance).
+* **Banco de Dados:** MySQL (Modelagem Relacional e Índices de Performance).
 
 
-* 
-**Visualização:** Power BI (DAX avançado, Design UI/UX e Storytelling).
+* **Visualização:** Power BI (DAX avançado, Design UI/UX e Storytelling).
 
 
-* 
-**APIs:** OpenSky (Telemetria ADSB) e Open-Meteo (Condições Climáticas).
+* **APIs:** OpenSky (Telemetria ADSB) e Open-Meteo (Condições Climáticas).
 
 
 
@@ -34,20 +30,16 @@ Desenvolvido como desafio final do bootcamp na **Generation Brasil**, em parceri
 
 ## 🚀 Funcionalidades Principais
 
-* 
-**Cálculo Geodésico:** Rastreio físico preciso da aeronave utilizando Latitude e Longitude.
+* **Cálculo Geodésico:** Rastreio físico preciso da aeronave utilizando Latitude e Longitude.
 
 
-* 
-**ETA Ajustado:** Algoritmo inteligente que adiciona **+10min** para ventos fortes e **+15min** para pistas molhadas .
+* **ETA Ajustado:** Algoritmo inteligente que adiciona **+10min** para ventos fortes e **+15min** para pistas molhadas .
 
 
-* 
-**Matriz de Risco Operacional:** Classificação automática em **Baixo**, **Médio** ou **Crítico** baseada em teto de nuvens e velocidade do vento.
+* **Matriz de Risco Operacional:** Classificação automática em **Baixo**, **Médio** ou **Crítico** baseada em teto de nuvens e velocidade do vento.
 
 
-* 
-**Alerta de Emergência:** Identificação de descidas bruscas ou desvios de rota fora do padrão de pouso.
+* **Alerta de Emergência:** Identificação de descidas bruscas ou desvios de rota fora do padrão de pouso.
 
 
 
@@ -57,16 +49,13 @@ Desenvolvido como desafio final do bootcamp na **Generation Brasil**, em parceri
 
 > O dashboard foi projetado em **Dark Mode** para reduzir a fadiga visual dos operadores da Torre de Controle.
 
-* 
-**Página 1:** Visão Geral da Frota e Status de Pontualidade.
+* **Página 1:** Visão Geral da Frota e Status de Pontualidade.
 
 
-* 
-**Página 2:** Telemetria Individualizada (Voo PSJTP) e Gráficos de Descida.
+* **Página 2:** Telemetria Individualizada (Voo PSJTP) e Gráficos de Descida.
 
 
-* 
-**Página 3:** Mapas de Calor e Distribuição de Risco por Aeroporto.
+* **Página 3:** Mapas de Calor e Distribuição de Risco por Aeroporto.
 
 
 
