@@ -1,2 +1,40 @@
-# aerotech
-Projeto realizado em Phyton, SQL e Power BI
+✈️ SkyCargo - Torre de Controle Logística (Case Sênior)
+
+📌 Sobre o Projeto
+Este projeto foi desenvolvido como desafio final do bootcamp na Generation Brasil. A SkyCargo transporta cargas críticas (órgãos e maquinário urgente). O objetivo foi substituir o monitoramento manual por uma Torre de Controle Automatizada que utiliza telemetria em tempo real e dados meteorológicos para prever o ETA (Estimated Time of Arrival) real. 
+
+
+🛠️ Tecnologias Utilizadas:
+
+
+Linguagem: Python (Coleta e Tratamento de Dados). 
+
+Banco de Dados: MySQL (Modelagem Relacional e Índices de Performance). 
+
+Visualização: Power BI (DAX avançado, Design UI/UX e Interatividade).
+
+APIs: OpenSky (Telemetria ADSB) e Open-Meteo (Condições Climáticas). 
+
+
+🚀 Funcionalidades Principais:
+
+
+Cálculo Geodésico: Rastreio físico da aeronave via Latitude/Longitude. 
+ETA Ajustado: Algoritmo que adiciona +10min em casos de ventos fortes e +15min para pistas molhadas. 
+Matriz de Risco: Classificação automática de voos em Baixo, Médio ou Crítico com base no clima e altitude. 
+Alerta de Emergência: Identificação automática de descidas bruscas fora do padrão de pouso. 
+
+
+📊 Visualização do Dashboard
+<img width="2574" height="1484" alt="image" src="https://github.com/user-attachments/assets/2fe799c6-a18d-45b9-afc9-3b676be198fd" />
+
+
+👥 Equipe
+
+Eu, Andrey, Glaucia, Leandro, João Victor e Juliana.
+
+
+
+------------------------------------------------------
+
+Este projeto demonstra competências em Engenharia de Dados, Business Intelligence e Storytelling com Dados.
