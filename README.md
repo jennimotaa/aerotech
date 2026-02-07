@@ -31,7 +31,10 @@ Alerta de Emergência: Identificação automática de descidas bruscas fora do p
 📊 Visualização do Dashboard
 <img width="2574" height="1484" alt="image" src="https://github.com/user-attachments/assets/2fe799c6-a18d-45b9-afc9-3b676be198fd" />
 
+
+
 📂 Como Utilizar este Repositório
+
 Por questões de segurança e proteção de dados, as credenciais de acesso ao banco de dados foram removidas dos scripts. Para replicar o projeto:
 
 1. Banco de Dados: Execute o arquivo schema.sql em seu servidor MySQL local para criar a estrutura das tabelas FACT_VOO_TELEMETRIA e FACT_CONDICOES_POUSO.
@@ -42,12 +45,17 @@ Por questões de segurança e proteção de dados, as credenciais de acesso ao b
 🚀 Próximos Passos
 
 Machine Learning: Implementação de modelos de regressão (XGBoost/Random Forest) para prever padrões de órbita e refinar o ETA de forma preditiva.
+
 Dados Premium: Transição para APIs de baixa latência para garantir disponibilidade total em escala industrial.
+
+
 
 👥 Agradecimentos
 
 Equipe: João Victor Ravazzi Ferretti, Andrey Alves Miranda, Carrie Jenniffer Alves Mota, Juliana Malheiros, Leandro Falasca.
+
 Instrutores: Luiz Chiavini e Samuel Reginatto
+
 Apoiadores: Generation Brasil, Grupo Cyrela e CashMe.
 
 ------------------------------------------------------
